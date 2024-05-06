@@ -352,7 +352,7 @@ header {
 }
 
 /*Seccion destacados*/
-/*CONT PADRE*/
+/*CONT GRAL*/
 .destacados-cont-gral {
   display: flex;
   flex-direction: column;
@@ -373,7 +373,7 @@ header {
   background-color: #102c57;
   border-radius: 5%;
   padding: 2.5rem;
-  margin: 10rem 0.5rem;
+  margin: 9rem 0.5rem;
   color: #eadbc8;
   justify-content: space-between;
   z-index: 1;
@@ -425,7 +425,7 @@ header {
   width: 60%;
   text-decoration: none;
   text-align: center;
-  background-color: white;
+  background-color: #dac0a3;
   color: #102c57;
   padding: 0.3rem;
   border-radius: 1rem;
@@ -436,9 +436,9 @@ header {
 /*destacados-caja3 "Descubre mas"*/
 .destacados-caja3 {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: center;
-}
+  }
 
 .descubre {
   font-weight: bold;
@@ -447,7 +447,8 @@ header {
 
 .descubre p {
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .descubre-imagenes {
   display: flex;

@@ -84,7 +84,79 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 768px) /*and (max-width: 1024px) */ {
+
+/*Footer*/
+footer{
+    color: #EADBC8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #102C57;
+    font-family: 'Montserrat Light';
+}
+
+.footer_caja1, .footer_caja2, .footer_caja3 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer_caja1 img{
+   margin-top: .3rem;
+   border-radius: 50%;
+}
+
+.footer_caja1 b{
+    color: white;
+} 
+
+.footer_caja1 p{
+    margin-top: 1.5rem;
+}
+
+.footer_caja2 h3, .footer_caja3 h3{
+    color: white;
+    font-family: 'Montserrat';
+    margin-top: 1.5rem;
+}
+
+.footer_caja2 div{
+    display: flex;
+}
+
+.footer_caja2 div i{  
+    margin-right: .7rem;
+}
+
+.footer_caja3{
+    padding-bottom: 2rem;
+}
+
+.footer_caja3 img{
+    width: 80%;
+}
+
+.footer_caja4{
+    width: 100%;
+    background-color: #EADBC8;
+    color: #102C57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_caja4 p{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+@media screen and (min-width: 768px) {
   /*Barra de navegacion*/
   nav {
     justify-content: space-between;
@@ -146,6 +218,18 @@ header {
   .header_caja2 p {
     color: white;
     font-size: 0.8rem;
+  }
+
+  /*Footer*/
+  footer{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem;
+  }
+
+  .footer_caja1, .footer_caja2, .footer_caja3{
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -214,6 +298,11 @@ header {
     transform: scale(1.1);
     box-shadow: 4px 4px 8px black;
   }
+
+  /*Footer*/
+  .footer_caja3 img{
+    width: 60%;
+}
 }
 
 /* section ofertas */

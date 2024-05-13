@@ -117,6 +117,48 @@
     <div class="destacados-cont-gral">
       <img src="./images/imagen_3.png" alt="">
 
+    <!-- Section nuevos ingresos -->
+    <section id="nuevos-ingresos">  
+      <div class="nuevos-ingresos-container">
+        <div style="background-color: #EADBC8;" class="nuevos-ingresos-row">
+          <div class="menu-titulo">
+            <div class="img-container">
+              <img src="" alt="">
+            </div>
+            <div class="text-container">
+              <h1>NUEVOS</h1>
+              <h1>INGRESOS</h1>
+              <p>Nos ocupamos de traerte no solo la mejor calidad</p>
+              <p>el modelo que más se ajuste a vos.</p>
+            </div>
+          </div>
+        </div>
+          
+        <div class="nuevos-ingresos-row">
+          <div class="card">
+            <img class="card-image" src="/images/iphone-112.20200518183722-removebg-preview.png" alt="">
+            <div class="card-content">
+
+              <p class="card-description">Nuevos modelos cada semana</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-image" src="/images/iphone-112.20200518183722-removebg-preview.png" alt="Imagen del Card">
+            <div class="card-content">
+              
+              <p class="card-description">Protección asegurada para cada modelo</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-image" src="/images/iphone-15-pink-2.png" alt="Imagen del Card">
+            <div class="card-content">
+              
+              <p class="card-description">Protección para cada tipo de lente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       <div class="destacados-container">
 
         <div class="destacados-caja1"><!--DESTACADOS-->
@@ -165,7 +207,7 @@
           <p class="subtitle-envios">Empaques asegurados</p>
         </div>
       </div>
-
+     
       <div class="envios-info">
         <i class="fa-solid fa-truck-fast"></i>
         <div class="envios-texto">
@@ -183,6 +225,86 @@
       </div>
     </div>
   </section>
+
+    <!-- Section contacto -->
+  <section id="contacto">
+    <div class="container-contacto">
+      <div class="nuevos-contacto-titulo row-contacto">
+        <h1 class="titulo">Contacto</h1>
+        <h2 class="subtitulo">Déjanos tu consulta y a la brevedad nos comunicaremos contigo.</h2>
+      </div>
+      <div class="row-contacto">
+        <form action="mailto:ejgr1990ar@gmail.com" method="POST" enctype="multipart/form-data" class="formulario" id="formulario">
+          
+          <!-- grupo nombre-->
+          <div class="form-row formulario__grupo" name="grupo_nombre" id="grupo_nombre">
+              <label for="nombre" class="formulario__label">Nombre</label> 
+              <div class="form_grupo-input">
+                  <input type="text" id="nombre" name="nombre" class="input-text"  placeholder="Ej: Esteban GArcía">
+                  <i class="formulacion__validacion_estado fa-solid fa-check"></i>
+              </div>
+             <p class="formulario__input-error">El nombre no puede poseer mas de 24 caracteres, numeros, ni caracteres especiales</p>
+          </div>
+          
+          <!-- grupo email-->
+          <div class="form-row" id="grupo_email" name="grupo_email">
+            <label for="email" class="formulario__label">Correo Electrónico</label>
+            <div class="form_grupo-input">
+                  <input type="email" id="email" name="email" class="input-text"  placeholder="Ej: ejgr1990ar@gmail.com">
+                  <i class="formulacion__validacion_estado fa-solid fa-check"></i>
+            </div>
+            <p class="formulario__input-error">El correo debe poseer @, y un dominio valido: example@example.com</p>
+          </div>
+          
+          <!--Grupo select-->
+          <div class="form-row" id="grupo_select" name="grupo_select">
+            <label for="pais" class="formulario__label">País</label>
+            <select name="pais" id="pais" class="input-text"  >
+              <option value="" selected disabled>Selecciona un País</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="México">México</option>
+              <option value="Perú">Perú</option>
+            </select>
+            <p class="formulario__select-error">Seleccione un pais</p>
+          </div>
+          <!-- grupo : checkbox-->
+          <div class="form-row" id="grupo__terminos" name ="grupo_terminos">
+             <label class="formulario__label">
+               <input type="checkbox" class="formulario__checkbox" name="terminos" id="terminos">
+                Deseo recibir información de nuevos productos en mi correo electronicos
+             </label>
+          </div>
+          
+          <!-- grupo : imagen-->
+          <div class="file-input-container form-row" id="grupo__imagen" name ="grupo_imagen">
+            <label for="imagen" class="formulario__label">¿Buscas un equipo en particular? Muéstranos el modelo</label>
+            <input type="file" id="imagen" name="imagen" class="input-file">
+            <p class="formulario__imagen-error">El archivo no es una imagen.</p>
+          </div>
+          
+          <!-- grupo : textarea-->
+          <div class="form-row" name="grupo_textarea" id="grupo_textarea">
+            <label for="mensaje" class="formulario__label" >Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="input-textarea" maxlength="256"></textarea>
+            <p class="formulario__textarea-error">Caracteres invalidos, maximo 128 caracteres.</p>
+          </div>
+          
+          <div class="form-row formulario_mensaje" name="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error: </b>Por favor rellena el formulario correctamente</p>
+          </div>
+
+          <div class="form-row formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="button-contact formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">formulario enviado</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </section>
+
   <!-- Section contacto -->
   <section id="contacto"></section>
 

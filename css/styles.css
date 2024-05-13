@@ -953,6 +953,368 @@ header {
   padding: 70px 0;
 }
 
+    .envios-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  
+}
+
+/* section Nuevos Ingresos */
+#nuevos-ingresos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /*background-color: var(--color-dark);*/
+}
+
+#nuevos-ingresos p{
+  color: var(--color-dark);
+  font-weight: bolder;
+}
+/**/
+.recuadro{
+  background-color: var(--color-semidaark);
+  border-radius:  25% 0 25% 0;
+}
+
+
+.nuevos-ingresos-container{
+  width:100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nuevos-ingresos-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap:1rem;
+}
+
+
+@media (max-width: 300px) {
+  .nuevos-ingresos-titulo:first-child img {
+    display: none; 
+  }
+}
+
+
+/**/
+.box{
+  flex: 0 0 calc(33.333% - 20px);
+  margin-bottom: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  padding-right: 5%;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card::before {
+  content: "";
+  background-color: var(--color-semidaark);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.card:hover::before {
+  transform: scale(1);
+}
+
+.card:hover .card-image {
+  background: var(--color-dark)
+}
+
+.card-content {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.card-description {
+  font-size: 16px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.card:hover .card-image {
+  transform: scale(1.1); 
+}
+
+/**/
+.container-contacto {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-extralight);
+}
+
+.row-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.formulario {
+  display: grid;
+  gap: 10px;
+}
+
+
+.form-row {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-text,
+.input-textarea,
+.input-checkbox,
+.input-file {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-text:focus,
+.input-textarea:focus,
+.input-checkbox:focus,
+.input-file:focus {
+  border-color: var(--color-dark);
+}
+
+.input-text:hover,
+.input-textarea:hover,
+.input-checkbox:hover,
+.input-file:hover {
+  background-color: var(--color-light);
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin-right: 10px;
+}
+
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "\2714";
+  color: white;
+  font-size: 14px;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+.button-contact {
+  background-color: var(--color-dark);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius:  25px;
+}
+
+.button-contact:hover {
+  background-color: var(--color-semidaark);
+}
+
+.input-textarea {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  height: calc(5 * 1.5em); 
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+
+.input-textarea {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+
+/**/
+.formulario__label{
+    display: block;
+    font-weight: bold;
+    padding:  10px;
+    cursor: pointer;
+    color: var(--color-dark);
+}
+
+.formulario__grupo-input{
+  position: relative;
+}
+.formulario__input{
+   width: 100%;
+   border: 3px solid transparent;
+}
+.formulario__imagen-error,
+.formulario__textarea-error,
+.formulario__select-error,
+.formulario__input-error{
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  display: none;
+}
+.formulario__imagen-error-activo,
+.formulario__textarea-error-activo,
+.formulario__imagen-error-activo,
+.formulario__select-error-activo,
+.formulario__input-error-activo{
+  display: block;
+}
+.formulario__imagen-error-activo,
+.formulario__textarea-error-activo,
+.formulario__input-error-activo,
+.formulario__imagen-error-activo,
+.formulario__select-error-activo{
+  color: red;
+  font-weight: bold;
+}
+.form_grupo-input {
+  position: relative; 
+}
+
+.formulacion__validacion_estado {
+  position: absolute;
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  opacity: 0;
+}
+
+.formulario_mensaje{
+  padding: 0 15px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  display: none;
+}
+.formulario_mensaje-activo{
+  display: block;
+}
+.formulario_mensaje p {
+  margin: 0;
+  text-align: center;
+}
+.formulario__mensaje-exito{
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
+.formulario__mensaje-exito-activo{
+  display: block;
+}
+/**/
+/**/
+.formulario__grupo-correcto .formulacion__validacion_estado{
+  color: #1ed12d;
+  opacity: 1;
+}
+.formulario__grupo-incorrecto .formulacion__validacion_estado{
+  color: #bb2929;
+  opacity: 1;
+}
+.formulario__grupo-incorrecto .input-text{
+  border: 3px solid #bb2929;
+}
+
+.formulario__grupo-incorrecto .input-text{
+  border: 3px solid #bb2929;
+}
+
+/**/
+@media screen and (max-width: 768px) {
+  .row-contacto {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/**/
 .info-container {
   display: flex;
   flex-direction: column;

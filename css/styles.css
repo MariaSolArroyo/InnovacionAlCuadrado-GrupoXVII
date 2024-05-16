@@ -985,6 +985,8 @@ header {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  align-content: center;
+  justify-content: center;
 }
 
 .nuevos-ingresos-row{
@@ -998,8 +1000,13 @@ header {
   gap:1rem;
 }
 
+.nuevos-ingresos-row-cajas{
+  flex: 1;
+  justify-content: center;
+}
 
-@media (max-width: 300px) {
+
+@media (max-width: 375px) {
   .nuevos-ingresos-titulo:first-child img {
     display: none; 
   }

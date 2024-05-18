@@ -10,9 +10,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-family: 'Montserrat', sans-serif;
+}
 
 body {
   background-color: var(--color-extralight);
+  font-family: 'Montserrat' !important;
 }
 
 /*Barra de navegacion*/
@@ -355,11 +359,14 @@ footer{
   justify-content: end;
   align-items: baseline;
   padding: 20px;
-  min-height: 35vh;
+  min-height: 65vh;
 }
 
 .img-ofertas {
   position: absolute;
+  width: 9rem;
+  right: 2px;
+  top: 2px;
 }
 
 .card-ofertas-titulo {
@@ -544,8 +551,8 @@ footer{
   width: 60%;
   text-decoration: none;
   text-align: center;
-  background-color: #dac0a3;
-  color: #102c57;
+  background: var(--color-extralight);
+  color: var(--color-dark);
   padding: 0.3rem;
   border-radius: 1rem;
   font-size: 0.8rem;
@@ -661,8 +668,8 @@ footer{
     width: 60%;
     text-decoration: none;
     text-align: center;
-    background-color: #dac0a3;
-    color: #102c57;
+    background-color: var(--color-extralight);
+    color: var(--color-dark);
     padding: 0.3rem;
     border-radius: 1rem;
     font-size: 0.8rem;

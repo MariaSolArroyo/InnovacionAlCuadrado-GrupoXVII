@@ -362,6 +362,12 @@ footer{
   min-height: 40vh;
 }
 
+.card-ofertas:hover{
+  animation: 1s ease-in-out;
+  transform: scale(1.01);
+  box-shadow: 1px 2px 2px 3px var(--color-semidaark);
+}
+
 .img-ofertas {
   position: absolute;
   width: 9rem;
@@ -383,6 +389,7 @@ footer{
   align-items: start;
   gap: 5px;
 }
+
 .gama,
 .tipo-gama {
   color: var(--color-extralight);
@@ -402,6 +409,10 @@ footer{
   text-decoration: none;
   padding: 5px 20px;
   border-radius: 20px;
+}
+
+.ofertas-content a:hover{
+  background: var(--color-semidaark);
 }
 
 @media screen and (min-width: 768px) {

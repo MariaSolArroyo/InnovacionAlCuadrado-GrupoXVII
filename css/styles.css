@@ -93,18 +93,16 @@ header{
 }
 
 .header_caja1 p{
-    font-family: 'Montserrat Light';
     margin: 0;
 }
 
 .header_caja1 h2{
-    font-family: 'Montserrat Black';
     font-size: 1.8rem;
     color: white;
 }
 
 .header_caja1 h1{
-    font-family: 'Montserrat Black';
+    font-weight: 900;
     font-size: 2.5rem;
 }
 
@@ -126,14 +124,13 @@ header{
 
 
 /*Footer*/
-footer{
+.caja_footer{
     color: #EADBC8;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #102C57;
-    font-family: 'Montserrat Light';
 }
 
 .footer_caja1, .footer_caja2, .footer_caja3 {
@@ -141,7 +138,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .footer_caja1 img{
@@ -159,7 +156,6 @@ footer{
 
 .footer_caja2 h3, .footer_caja3 h3{
     color: white;
-    font-family: 'Montserrat';
     margin-top: 1.5rem;
 }
 
@@ -169,6 +165,7 @@ footer{
 
 .footer_caja2 div i{  
     margin-right: .7rem;
+    font-size: 1.6rem;
 }
 
 .footer_caja3{
@@ -240,9 +237,10 @@ footer{
 }
 
   /*Footer*/
-  footer{
-    flex-direction: row;
-    align-items: flex-start;
+  .caja_footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 4rem;
   }
 
@@ -331,6 +329,11 @@ footer{
     }
 
   /*Footer*/
+
+  .caja_footer{
+    display: flex;
+    flex-direction: row;
+  }
   .footer_caja3 img{
     width: 60%;
 }

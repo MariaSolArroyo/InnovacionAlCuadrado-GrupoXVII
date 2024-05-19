@@ -15,8 +15,8 @@ html{
 }
 
 body {
-  background-color: var(--color-extralight);
-  font-family: 'Montserrat' !important;
+  background: var(--color-extralight);
+  font-family: 'Montserrat';
 }
 
 /*Barra de navegacion*/
@@ -359,7 +359,7 @@ footer{
   justify-content: end;
   align-items: baseline;
   padding: 20px;
-  min-height: 65vh;
+  min-height: 40vh;
 }
 
 .img-ofertas {
@@ -413,11 +413,18 @@ footer{
 
 /* section info */
 
+/* section info */
+
 .info {
   padding: 2rem;
   background: var(--color-dark);
   padding: 70px 0;
 }
+
+    .envios-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
 .info-container {
   display: flex;
@@ -479,7 +486,8 @@ footer{
 .destacados-cont-gral {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  padding-top: 5rem;
+  background: var(--color-semidaark);
 }
 
 .destacados-cont-gral img {
@@ -518,7 +526,6 @@ footer{
   line-height: 0.8;
   text-transform: uppercase;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-light);
   align-items: center;
 }
@@ -526,7 +533,6 @@ footer{
 .destacados-caja1 p {
   font-size: 1rem;
   font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-light);
   text-align: center;
 }
@@ -542,7 +548,6 @@ footer{
 .destacados-caja2 p {
   font-size: 1rem;
   font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-light);
   text-align: center;
 }
@@ -590,6 +595,7 @@ footer{
 .destacados-caja3 {
   display: flex;
   flex-direction: column;
+  background: var(--color-semidaark);
 }
 
 .descubre {
@@ -603,6 +609,7 @@ footer{
 .descubre p {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .descubre-imagenes img:hover {
@@ -613,6 +620,8 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
+
 }
 
 .descubre-imagenes img {
@@ -659,6 +668,9 @@ footer{
     text-align: left;
   }
 
+  .destacados-caja2{
+    align-items: start;
+  }
   .destacados-caja2 p {
     display: flex;
     text-align: left;
@@ -695,7 +707,7 @@ footer{
   }
 }
 
-:root {
+/* :root {
   --color-extralight: #fefaf6;
   --color-light: #eadbc8;
   --color-semidaark: #dac0a3;
@@ -710,13 +722,13 @@ footer{
 
 body {
   background-color: var(--color-extralight);
-}
+} */
 
 
 
   
 /* section ofertas */
-.ofertas {
+/* .ofertas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -778,21 +790,9 @@ body {
   text-decoration: none;
   padding: 5px 20px;
   border-radius: 20px;
-}
+} */
 
-/* section info */
 
-.info {
-  padding: 2rem;
-  background: var(--color-dark);
-  padding: 70px 0;
-}
-
-    .envios-container{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-  
 
 /* section Nuevos Ingresos */
 #nuevos-ingresos{

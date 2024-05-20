@@ -345,6 +345,7 @@ header{
   flex-direction: column;
   padding-top: 5rem;
   background: var(--color-semidaark);
+  overflow-x: hidden;
 }
 
 .destacados-cont-gral img {
@@ -606,10 +607,11 @@ header{
 
 @media screen and (max-width: 550px) {
   .nuevos-ingresos-menu {
-      margin: 4rem 0rem; 
-      padding: 1.5rem; 
+      padding: 2.5rem; 
       font-size: 4rem;
       margin: 9rem 0.5rem;
+      border: 0rem;
+      overflow-x: auto;
   }
 
   #nuevos-ingresos h2 {
@@ -617,6 +619,21 @@ header{
     text-align: center;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .nuevos-ingresos-menu {
+      font-size: 20vw;
+      margin: 9rem 0.5rem;
+      border: 0rem;
+      overflow-x:hidden;
+  }
+
+  #nuevos-ingresos h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
 
 /**/
 .box{

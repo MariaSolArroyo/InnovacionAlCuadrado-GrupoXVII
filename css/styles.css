@@ -524,7 +524,7 @@ header{
 }
 
 .nuevos-ingresos-container > img:hover{
-  animation: fade-in 0.5s ease-out forwards;
+  animation: fade-in 1s ease-out forwards;
 }
 
 .nuevos-ingresos-container > img{
@@ -574,7 +574,6 @@ header{
   flex: 1;
   justify-content: center;
 }
-
 
 
 @media screen and (max-width: 1230px) {

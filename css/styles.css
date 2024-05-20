@@ -490,23 +490,66 @@ header{
 
 /* section Nuevos Ingresos */
 #nuevos-ingresos{
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   background-color: var(--color-dark);
-}
-
-#nuevos-ingresos p{
   color: var(--color-dark);
-  font-weight: bolder;
+  padding-top: 5rem;
 }
-/**/
-.recuadro{
+
+#nuevos-ingresos h2 {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 0.8;
+  text-align: left;
+}
+
+#nuevos-ingresos  p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50%)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nuevos-ingresos-container > img:hover{
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.nuevos-ingresos-container > img{
+  position: absolute;
+  z-index: 2;
+  margin-inline-start: 10%;
+}
+
+.nuevos-ingresos-menu{
+  margin-inline-end: 0%;
+  display: flex;
+  height: 20rem;
   background-color: var(--color-semidaark);
-  border-radius:  25% 0 25% 0;
+  border-radius: 5%;
+  padding: 2.5rem;
+  margin: 9rem 0rem;
+  justify-content:right;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
 }
 
 
+/**/
 .nuevos-ingresos-container{
   width:100%;
   padding-right: 15px;
@@ -523,8 +566,7 @@ header{
   margin-right: -15px;
   margin-left: -15px;
   justify-content: space-around;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  margin-bottom: 4rem;
   gap:1rem;
 }
 
@@ -535,7 +577,47 @@ header{
 
 
 
+@media screen and (max-width: 1230px) {
+  .nuevos-ingresos-container > img{
+    display: none;
+  }
 
+  .nuevos-ingresos-menu{
+      display: flex;
+      background-color: var(--color-semidaark);
+      padding: 2.5rem;
+      margin: 9rem 0.5rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      z-index: 1;
+  }
+  #nuevos-ingresos  p,
+  #nuevos-ingresos h2 {
+    text-align: center;
+  }
+
+  #nuevos-ingresos h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .nuevos-ingresos-menu {
+      margin: 4rem 0rem; 
+      padding: 1.5rem; 
+      font-size: 4rem;
+      margin: 9rem 0.5rem;
+  }
+
+  #nuevos-ingresos h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
 
 /**/
 .box{
@@ -552,7 +634,7 @@ header{
 .card {
   width: 300px;
   height: 400px;
-  background-color: #fff;
+  background-color: var(--color-semidaark);
   border-radius: 10px;
   overflow: hidden;
   position: relative;

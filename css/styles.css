@@ -611,7 +611,7 @@ header{
       font-size: 4rem;
       margin: 9rem 0.5rem;
       border: 0rem;
-      overflow-x: auto;
+      overflow-x: hidden;
   }
 
   #nuevos-ingresos h2 {

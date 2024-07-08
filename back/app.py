@@ -110,12 +110,6 @@ class Catalogo:
 # Cuerpo del programa
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
-
-PASSWORD= "JwL7hDCepzLxk$8"
-HOST= "nkromantte.mysql.pythonanywhere-services.com"
-USERNAME="nkromantte"
-DATABASE="nkromantte$miapp"
-
 catalogo = Catalogo(host=config.HOST, user=config.USERNAME, password=config.PASSWORD, database=config.DATABASE)
 
 

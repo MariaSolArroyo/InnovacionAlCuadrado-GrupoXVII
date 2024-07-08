@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+
+  <!-- Libreria Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- libreria bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <!--Enlace a los Estilos -->
+    <link rel="stylesheet" href="./css/styles.css" >
+    <link rel="stylesheet" href="./css/styleCrud.css">
+    <title>TechXVII</title>
+</head>
+
+<body>
+ <!--Barra de navegacion-->
+    <nav>
+        <img src="images/Logo.png" alt="Logo TechXVIII ">
+        <label for="menu">
+            <img class="nav_menu" src="images/menuHamburgesa.png" alt="Icono de menu">
+        </label>
+        <input type="checkbox" id="menu">
+        <div class="barra_navegacion">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#ofertas">Ofertas</a>
+            <a href="index.html#destacados">Destacados</a>
+            <a href="index.html#nuevos-ingresos">Ingresos</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="./login.html" class="btnlogin"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <section id="login">
+            <div id="card-login">
+                <div class="card-title">
+                    <img src="./images/Logo.png" alt="">
+                </div>
+                <form action="">
+                    <h2 class="title-login" >Login</h2>
+
+                    <label >
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"  id="user" placeholder="username" required>
+                    </label>
+                    <label>
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="password" required id="pass">
+                    </label>
+                    <p class="personal">Solo personal autorizado</p>
+                    <button type="submit" id="submit">Ingresar</button>
+                    
+                </form>
+                
+
+            </div>
+    </section>
+
+  <!-- Section footer -->
+  <footer id="footer">
+    <div class="caja_footer">
+        <div class="footer_caja1">
+            <img src="images/Logo--TechXVIII.png" alt="">
+            <p><b>Al mayor para América Latina</b> <br>
+            Somos un distribuidor mayorista de <br> teléfonos celulares y accesorios en <br> Norte, Centro y Sudamérica</p>
+        </div>
+        <div class="footer_caja2">
+            <h3>CONTACTENOS</h3>
+            <div class="footer_caja2-div">
+              <div>
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Av Puyrredon 1454, <br> Buenos Aires, AR</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-at"></i>
+                <p>info@techxvii.com</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone" ></i>
+                <p>+54 123 456 67 99</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-clock" ></i>
+                <p>Lunes - Viernes <br>9:00am - 6:00pm</p>
+            </div>
+            </div>
+        </div>
+        <div class="footer_caja3">
+            <h3>METODOS DE PAGO</h3>
+            <img src="images/mercadopago-credit-card-logo-bis.webp" alt="">
+        </div>
+    </div> 
+
+    <div class="footer_caja4">
+        <p>Todos los Derechos Reservados © 2024 <br>
+                  Innovación Al Cuadrado</p>
+    </div>
+      </footer>
+
+
+      <script src="./js/login.js"></script>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

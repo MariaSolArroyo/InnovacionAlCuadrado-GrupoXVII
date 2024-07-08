@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap');
+
+:root {
+  --color-extralight: #fefaf6;
+  --color-light: #eadbc8;
+  --color-semidaark: #dac0a3;
+  --color-dark: #102c57;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-semidaark);
+  font-family: "Montserrat", sans-serif;
+}
+
+#login{ 
+    min-height: 100vh;
+    border-top: 1px solid #102c5749;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#card-login{
+    background: var(--color-dark);
+    color: var(--color-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 5px 15px var(--color-dark);
+
+   
+}
+
+.card-title{
+    background: var(--color-extralight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius:20px ;
+}
+
+.card-title img{
+    width: 300px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.title-login{
+    font-weight: 900;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+form label{
+    margin-bottom: 35px;
+}
+
+form label .fa-solid{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+#card-login input{
+    outline: none;
+    border: none;
+    color: var(--color-extralight);
+    border-bottom: 1px solid var(--color-extralight);
+    padding: 0 5px;
+    background: transparent;
+    font-size: 1rem;
+}
+
+form input::placeholder{
+    color: var(--color-light);
+    opacity: 0.4;
+    font-weight: 100;
+    
+}
+
+form .personal{
+    color: var(--color-extralight);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+form button{
+    border: none;
+    padding: 4px 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}

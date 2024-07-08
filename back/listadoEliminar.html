@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Productos</title>
+    <link rel="stylesheet" href="./static/css/estilos.css">
+</head>
+
+<body class="eliminar-productos">
+    <div class="logo-centrado">
+        <img src="./static/imagenes/logo.png" alt="logo">
+    </div>
+    <h1>Eliminar Productos del Inventario</h1><br>
+
+    <table id="productos-table">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th align="right">Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </tbody>
+    </table><br>
+
+    <div class="contenedor-centrado">
+        <a href="index.html">Menu principal</a>
+    </div>
+
+    <script>
+        const URL = "https://nkromantte.pythonanywhere.com/";
+
+        // Obtiene el contenido del inventario
+        function obtenerProductos() {
+            fetch(URL + 'productos')
+                .then(response => {
+                    if (response.ok) { return response.json(); }
+                    throw new Error('Error al obtener los productos.');
+                })
+                .then(data => {
+                    const productosTable = document.getElementById('productos-table').getElementsByTagName('tbody')[0];
+                    productosTable.innerHTML = '';
+                    data.forEach(producto => {
+                        const row = productosTable.insertRow();
+                        row.innerHTML = `
+                            <td>${producto.codigo}</td>
+                            <td>${producto.descripcion}</td>
+                            <td>${producto.cantidad}</td>
+                            <td align="right">${producto.precio}</td>
+                            <td><button class="btnEliminar" onclick="eliminarProducto('${producto.codigo}')">Eliminar</button></td>
+                        `;
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al obtener los productos.');
+                });
+        }
+
+        // Elimina un producto
+        function eliminarProducto(codigo) {
+            if (confirm('¿Estás seguro de que quieres eliminar este producto?')) {
+                fetch(URL + `productos/${codigo}`, { method: 'DELETE' })
+                    .then(response => {
+                        if (response.ok) {
+                            obtenerProductos();
+                            alert('Producto eliminado correctamente.');
+                        } else {
+                            throw new Error('Error al eliminar el producto.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Error al eliminar el producto.');
+                    });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', obtenerProductos);
+    </script>
+</body>
+
+</html>
+
